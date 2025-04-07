@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>360 Photo Viewer</title>
+  <script src="https://unpkg.com/photo-sphere-viewer@5/dist/photo-sphere-viewer.js"></script>
+</head>
+<body>
+
+<h1>Δες τη 360 Φωτογραφία μου!</h1>
+<div id="viewer" style="width: 100%; height: 600px;"></div>
+
+<script>
+  const viewer = new PhotoSphereViewer.Viewer({
+    container: document.getElementById('viewer'),
+    panorama: 'myphoto.jpg' // το όνομα της εικόνας σου
+  });
+</script>
+
+</body>
+</html>
